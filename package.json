@@ -1,0 +1,38 @@
+{
+    "name": "test-contract",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile": "npx hardhat compile",
+        "deploy-testnet:default-TIX": "npx hardhat run scripts/default-TIX-testnet-deploy.ts --network polygonMumbai",
+        "deploy-testnet:upgrade-TIX": "npx hardhat run scripts/upgrade-TIX-testnet-deploy.ts --network polygonMumbai",
+        "verify-testnet:TIX": "npx hardhat verify --contract contracts/TIX/TIX.sol:TIX --network polygonMumbai",
+        "lint": "prettier --list-different .",
+        "format": "prettier --write ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@openzeppelin/hardhat-upgrades": "^1.22.1",
+        "hardhat": "^2.12.4",
+        "prettier": "^2.8.3",
+        "prettier-plugin-solidity": "^1.1.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.4"
+    },
+    "dependencies": {
+        "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+        "@nomiclabs/hardhat-etherscan": "^3.1.5",
+        "@nomiclabs/hardhat-waffle": "^2.0.3",
+        "@openzeppelin/contracts": "^4.8.0",
+        "@openzeppelin/contracts-upgradeable": "^4.8.1",
+        "@types/web3": "^1.2.2",
+        "@uniswap/v3-core": "^1.0.1",
+        "@uniswap/v3-periphery": "^1.4.3",
+        "dotenv": "^16.0.3",
+        "solhint": "^3.3.8",
+        "web3": "^1.8.1"
+    }
+}
