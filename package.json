@@ -5,9 +5,9 @@
     "main": "index.js",
     "scripts": {
         "compile": "npx hardhat compile",
-        "deploy-testnet:default-TIX": "npx hardhat run scripts/default-TIX-testnet-deploy.ts --network polygonMumbai",
-        "deploy-testnet:upgrade-TIX": "npx hardhat run scripts/upgrade-TIX-testnet-deploy.ts --network polygonMumbai",
-        "verify-testnet:TIX": "npx hardhat verify --contract contracts/TIX/TIX.sol:TIX --network polygonMumbai",
+        "deploy-testnet:default-AID": "npx hardhat run scripts/default-AID-testnet-deploy.ts --network polygonMumbai",
+        "deploy-testnet:upgrade-AID": "npx hardhat run scripts/upgrade-AID-testnet-deploy.ts --network polygonMumbai",
+        "verify-testnet:AID": "npx hardhat verify --contract contracts/AID/AID.sol:AID --network polygonMumbai",
         "lint": "prettier --list-different .",
         "format": "prettier --write ."
     },
